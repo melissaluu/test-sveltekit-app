@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+
+		
+
+		<link rel="modulepreload" href="/test-sveltekit-app/_app/start-f184aad9.js">
+		<link rel="modulepreload" href="/test-sveltekit-app/_app/chunks/vendor-43cd886a.js">
+		<link rel="modulepreload" href="/test-sveltekit-app/_app/chunks/paths-45dac81d.js">
+		<link rel="modulepreload" href="/test-sveltekit-app/_app/layout.svelte-0c522352.js">
+		<link rel="modulepreload" href="/test-sveltekit-app/_app/pages/index.svelte-905295b5.js">
+		<link rel="stylesheet" href="/test-sveltekit-app/_app/assets/start-a8cd1609.css">
+
+		<script type="module">
+			import { start } from "/test-sveltekit-app/_app/start-f184aad9.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"/test-sveltekit-app","assets":"/test-sveltekit-app"},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/test-sveltekit-app/_app/layout.svelte-0c522352.js"),
+						import("/test-sveltekit-app/_app/pages/index.svelte-905295b5.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<h1>Trial SvelteKit App!</h1>
+<p>Did this work?</p>
+<a href="/test-sveltekit-app/test">Testing page</a>
+
+
+
+	
+</div>
+	</body>
+</html>
