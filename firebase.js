@@ -1,4 +1,4 @@
-import { initializeApp } from 'firebase/app';
+import { initializeApp, getApps, getApp } from 'firebase/app';
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
 
 
@@ -11,10 +11,16 @@ var firebaseConfig = {
     appId: '1:1088283466021:web:e9bd4e66b40e68f55262cc'
 };
 
-var firebaseApp = initializeApp(firebaseConfig);
-export var db = getFirestore();
 
-		// console.log(firebaseApp);
+if (getApps().length === 0) {
+    initializeApp(firebaseConfig, "testApp");
+}
+
+
+console.log('here', getApps(), getApp('testApp'));
+export var db = getFirestore(getApp('testApp'));
+
+
 		// console.log(db);
 
 
