@@ -1,28 +1,11 @@
 <script context="module">
-	import { initializeApp } from 'firebase/app';
-	import { getFirestore, collection, getDocs } from 'firebase/firestore';
-
+	import { collection, getDocs } from 'firebase/firestore';
+	import { db } from '../../static/firebase.js';
 	export async function load() {
-		var firebaseConfig = {
-			apiKey: 'AIzaSyAupV49Mt24faf7jzkpV3ADhhajbLPwnac',
-			authDomain: 'test-sveltekit-app.firebaseapp.com',
-			projectId: 'test-sveltekit-app',
-			storageBucket: 'test-sveltekit-app.appspot.com',
-			messagingSenderId: '1088283466021',
-			appId: '1:1088283466021:web:e9bd4e66b40e68f55262cc'
-		};
-
-		var firebaseApp = initializeApp(firebaseConfig);
-		const db = getFirestore();
-
-		// console.log(firebaseApp);
-		// console.log(db);
-
 		var values = [];
 
 		const querySnapshot = await getDocs(collection(db, 'app'));
 		querySnapshot.forEach((doc) => {
-			console.log(`${doc.id} => ${doc.data()}`);
 			values.push(doc.data());
 		});
 
