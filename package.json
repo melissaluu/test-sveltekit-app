@@ -18,6 +18,7 @@
     "@material/typography": "^11.0.0",
     "@sveltejs/adapter-static": "^1.0.0-next.9",
     "@sveltejs/kit": "next",
+    "d3": "^6.7.0",
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-svelte3": "^3.2.0",
@@ -32,6 +33,6 @@
     "@smui/button": "^4.2.0",
     "@smui/common": "^4.2.0",
     "@smui/tooltip": "^4.2.0",
-    "d3": "^6.7.0"
+    "charts.css": "^0.9.0"
   }
 }

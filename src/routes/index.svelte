@@ -11,6 +11,7 @@
 <p>Is this working?wer?</p>
 <p><a href="{base}/test">Testing page</a></p>
 <p><a href="{base}/d3">D3 page</a></p>
+<p><a href="{base}/chartscss">Charts.css page</a></p>
 
 <div class="container" style="display: flex; flex-wrap: wrap; align-items: center;">
 	<Wrapper>

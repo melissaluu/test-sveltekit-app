@@ -20,6 +20,7 @@
 	});
 </script>
 
+<h1>D3 test</h1>
 <div bind:this={el} class="chart" />
 
 <style>
