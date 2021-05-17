@@ -1,0 +1,1 @@
+import{J as e,R as a}from"./vendor-ab0330f5.js";e({apiKey:"AIzaSyAupV49Mt24faf7jzkpV3ADhhajbLPwnac",authDomain:"test-sveltekit-app.firebaseapp.com",projectId:"test-sveltekit-app",storageBucket:"test-sveltekit-app.appspot.com",messagingSenderId:"1088283466021",appId:"1:1088283466021:web:e9bd4e66b40e68f55262cc"});var t=a();export{t as d};
