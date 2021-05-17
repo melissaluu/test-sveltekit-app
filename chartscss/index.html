@@ -13,9 +13,9 @@
 		<link rel="modulepreload" href="/test-sveltekit-app/_app/chunks/vendor-dcd22399.js">
 		<link rel="modulepreload" href="/test-sveltekit-app/_app/chunks/paths-45dac81d.js">
 		<link rel="modulepreload" href="/test-sveltekit-app/_app/layout.svelte-fe32add6.js">
-		<link rel="modulepreload" href="/test-sveltekit-app/_app/pages/index.svelte-c3a62890.js">
+		<link rel="modulepreload" href="/test-sveltekit-app/_app/pages/chartscss.svelte-b4569cfb.js">
 		<link rel="stylesheet" href="/test-sveltekit-app/_app/assets/start-a8cd1609.css">
-		<link rel="stylesheet" href="/test-sveltekit-app/_app/assets/pages/index.svelte-aef3289e.css">
+		<link rel="stylesheet" href="/test-sveltekit-app/_app/assets/pages/chartscss.svelte-84b13b75.css">
 
 		<script type="module">
 			import { start } from "/test-sveltekit-app/_app/start-ad728f80.js";
@@ -31,11 +31,11 @@
 					error: null,
 					nodes: [
 						import("/test-sveltekit-app/_app/layout.svelte-fe32add6.js"),
-						import("/test-sveltekit-app/_app/pages/index.svelte-c3a62890.js")
+						import("/test-sveltekit-app/_app/pages/chartscss.svelte-b4569cfb.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "/",
+						path: "/chartscss",
 						query: new URLSearchParams(""),
 						params: {}
 					}
@@ -53,16 +53,11 @@
 	<div id="svelte">
 
 
-<h1>SvelteKit App Trial</h1>
-<p>Is this working?wer?</p>
-<p><a href="/test-sveltekit-app/test">Testing page</a></p>
-<p><a href="/test-sveltekit-app/d3">D3 page</a></p>
-<p><a href="/test-sveltekit-app/chartscss">Charts.css page</a></p>
-
-<div class="container svelte-9bfamv" style="display: flex; flex-wrap: wrap; align-items: center;"><span tabindex="0">Material UI tooltip example</span>
-
-<div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-0" tabindex="null" data-mdc-tooltip-persist="null" data-mdc-tooltip-persistent="null"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">Tooltip on a span.</div>
-</div>
+<h1>Charts.css test</h1>
+<div><table id="bar-example-3" class="charts-css bar show-heading svelte-16i5wub"><caption>Descriptive Chart Heading </caption>
+<tbody><tr><td style="--size:0.2;"></td></tr> <tr><td style="--size:0.4;"></td></tr>
+	<tr><td style="--size:0.6;"></td></tr> <tr><td style="--size:0.8;"></td></tr>
+	<tr><td style="--size:1;"></td></tr></tbody></table>
 </div>
 
 
