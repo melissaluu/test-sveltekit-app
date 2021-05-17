@@ -33,6 +33,7 @@
     "@smui/button": "^4.2.0",
     "@smui/common": "^4.2.0",
     "@smui/tooltip": "^4.2.0",
-    "charts.css": "^0.9.0"
+    "charts.css": "^0.9.0",
+    "firebase": "^9.0.0-beta.1"
   }
 }

@@ -21,6 +21,9 @@ const config = {
       ssr: {
         noExternal: Object.keys(pkg.dependencies || {}),
       },
+      optimizeDeps: {
+        include: []
+      }
     },
     paths: {
       base: pathBase,
