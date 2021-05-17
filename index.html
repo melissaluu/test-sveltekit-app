@@ -9,16 +9,16 @@
 
 		
 
-		<link rel="modulepreload" href="/test-sveltekit-app/_app/start-ad728f80.js">
-		<link rel="modulepreload" href="/test-sveltekit-app/_app/chunks/vendor-dcd22399.js">
+		<link rel="modulepreload" href="/test-sveltekit-app/_app/start-b5378efe.js">
+		<link rel="modulepreload" href="/test-sveltekit-app/_app/chunks/vendor-c6512c56.js">
 		<link rel="modulepreload" href="/test-sveltekit-app/_app/chunks/paths-45dac81d.js">
-		<link rel="modulepreload" href="/test-sveltekit-app/_app/layout.svelte-fe32add6.js">
-		<link rel="modulepreload" href="/test-sveltekit-app/_app/pages/index.svelte-c3a62890.js">
+		<link rel="modulepreload" href="/test-sveltekit-app/_app/layout.svelte-a4a92178.js">
+		<link rel="modulepreload" href="/test-sveltekit-app/_app/pages/index.svelte-71efd9d3.js">
 		<link rel="stylesheet" href="/test-sveltekit-app/_app/assets/start-a8cd1609.css">
 		<link rel="stylesheet" href="/test-sveltekit-app/_app/assets/pages/index.svelte-aef3289e.css">
 
 		<script type="module">
-			import { start } from "/test-sveltekit-app/_app/start-ad728f80.js";
+			import { start } from "/test-sveltekit-app/_app/start-b5378efe.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"/test-sveltekit-app","assets":"/test-sveltekit-app"},
@@ -30,8 +30,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/test-sveltekit-app/_app/layout.svelte-fe32add6.js"),
-						import("/test-sveltekit-app/_app/pages/index.svelte-c3a62890.js")
+						import("/test-sveltekit-app/_app/layout.svelte-a4a92178.js"),
+						import("/test-sveltekit-app/_app/pages/index.svelte-71efd9d3.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -46,6 +46,9 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono" />
+
+	<!-- <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script> -->
 	<!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
 </head>
 
@@ -59,6 +62,8 @@
 <p><a href="/test-sveltekit-app/d3">D3 page</a></p>
 <p><a href="/test-sveltekit-app/chartscss">Charts.css page</a></p>
 
+[{&quot;name&quot;:&quot;home&quot;}]
+
 <div class="container svelte-9bfamv" style="display: flex; flex-wrap: wrap; align-items: center;"><span tabindex="0">Material UI tooltip example</span>
 
 <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-0" tabindex="null" data-mdc-tooltip-persist="null" data-mdc-tooltip-persistent="null"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">Tooltip on a span.</div>
@@ -69,6 +74,28 @@
 
 	
 </div>
+
+	<script>
+		// var firebaseConfig = {
+		// 	apiKey: 'AIzaSyAupV49Mt24faf7jzkpV3ADhhajbLPwnac',
+		// 	authDomain: 'test-sveltekit-app.firebaseapp.com',
+		// 	projectId: 'test-sveltekit-app',
+		// 	storageBucket: 'test-sveltekit-app.appspot.com',
+		// 	messagingSenderId: '1088283466021',
+		// 	appId: '1:1088283466021:web:e9bd4e66b40e68f55262cc'
+		// };
+		// // Initialize Firebase
+		// firebase.initializeApp(firebaseConfig);
+
+		// var db = firebase.firestore();
+		// console.log(db)
+
+		// db.collection("app").get().then((querySnapshot) => {
+		// 	querySnapshot.forEach((doc) => {
+		// 		console.log(`${doc.id} => ${JSON.stringify(doc.data())}`);
+		// 	});
+		// });
+	</script>
 </body>
 
 </html>
