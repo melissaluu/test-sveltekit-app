@@ -3,11 +3,14 @@
 	import Tooltip, { Wrapper } from '@smui/tooltip';
 	import '@smui/button/bare.css';
 	import '@smui/tooltip/bare.css';
+
+	console.log(base);
 </script>
 
 <h1>SvelteKit App Trial</h1>
-<p>Is this working??</p>
+<p>Is this working?wer?</p>
 <p><a href="{base}/test">Testing page</a></p>
+<p><a href="{base}/d3">D3 page</a></p>
 
 <div class="container" style="display: flex; flex-wrap: wrap; align-items: center;">
 	<Wrapper>

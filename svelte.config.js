@@ -3,6 +3,10 @@ import { createRequire } from 'module'
 const require = createRequire(import.meta.url)
 const pkg = require('./package.json')
 
+const pathBase = process.env.NODE_ENV === 'development' ? '' : '/test-sveltekit-app';
+
+// console.log(process.env.NODE_ENV, pathBase)
+
 const config = {
   kit: {
     // By default, `npm run build` will create a standard Node app.
@@ -19,8 +23,8 @@ const config = {
       },
     },
     paths: {
-      base: '/test-sveltekit-app',
-      assets: '/test-sveltekit-app'
+      base: pathBase,
+      assets: pathBase
     },
   },
 }
