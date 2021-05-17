@@ -13,9 +13,9 @@
 		<link rel="modulepreload" href="/test-sveltekit-app/_app/chunks/vendor-dcd22399.js">
 		<link rel="modulepreload" href="/test-sveltekit-app/_app/chunks/paths-45dac81d.js">
 		<link rel="modulepreload" href="/test-sveltekit-app/_app/layout.svelte-fe32add6.js">
-		<link rel="modulepreload" href="/test-sveltekit-app/_app/pages/test.svelte-d7510a33.js">
-		<link rel="modulepreload" href="/test-sveltekit-app/_app/chunks/data-19359c77.js">
+		<link rel="modulepreload" href="/test-sveltekit-app/_app/pages/d3.svelte-7f242258.js">
 		<link rel="stylesheet" href="/test-sveltekit-app/_app/assets/start-a8cd1609.css">
+		<link rel="stylesheet" href="/test-sveltekit-app/_app/assets/pages/d3.svelte-e996759d.css">
 
 		<script type="module">
 			import { start } from "/test-sveltekit-app/_app/start-87b0e3d6.js";
@@ -31,11 +31,11 @@
 					error: null,
 					nodes: [
 						import("/test-sveltekit-app/_app/layout.svelte-fe32add6.js"),
-						import("/test-sveltekit-app/_app/pages/test.svelte-d7510a33.js")
+						import("/test-sveltekit-app/_app/pages/d3.svelte-7f242258.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "/test",
+						path: "/d3",
 						query: new URLSearchParams(""),
 						params: {}
 					}
@@ -53,9 +53,7 @@
 	<div id="svelte">
 
 
-<h1>This is subroute test</h1>
-<p>Testing 123</p>
-<p>JSON data: {&quot;id&quot;:123,&quot;name&quot;:&quot;Test 1&quot;}</p>
+<div class="chart svelte-16mgb46"></div>
 
 
 
